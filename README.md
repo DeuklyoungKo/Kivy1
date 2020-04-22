@@ -93,10 +93,10 @@ Link : <https://kivy.org/doc/stable/guide/packaging-android.html#buildozer>
 
 ***
 ## Image
-![Minion](http://www.nexbrain.com/renew/images/comm/logo.png)   
-![Alt text](http://www.nexbrain.com/renew/images/comm/logo.png "Nexbrain")   
-<img src="/path/to/img.jpg" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="RubberDuck"></img>   
-<img src="/path/to/img.jpg" width="40%" height="30%" title="px(픽셀) 크기 설정" alt="RubberDuck"></img>
+![Minion](http://ticketimage.interpark.com/Movie/still_image/V16/V1600651p_01.gif)   
+![Alt text](https://i.pinimg.com/originals/04/83/d4/0483d4c162e86dc06f3fc86fbb5e2cee.jpg "Moon River")   
+<img src="https://i.pinimg.com/236x/df/ca/5d/dfca5d5b8d028fe109ecf95f320a9cd7--cool-posters-sci-fi-movies.jpg" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="The Time Machine"></img>   
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTjWdatOOPqznooi5w9rSgMO7vuyYSfqpQBhvQ4agJw_CVwhtVl&usqp=CAU" width="40%" height="30%" title="px(픽셀) 크기 설정" alt="The Wonderful Wizard of Oz"></img>
 ***
 ## To change line
 * 줄 바꿈을 하기 위해서는 문장 마지막에서 3칸이상을 띄어쓰기해야 한다.___\\ 띄어쓰기
