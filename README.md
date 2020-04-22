@@ -93,5 +93,14 @@ Link : <https://kivy.org/doc/stable/guide/packaging-android.html#buildozer>
 
 ***
 ## Image
-![Minion](http://octodex.github.com/images/minion.png)
-![Alt text](http://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
+![Minion](http://www.nexbrain.com/renew/images/comm/logo.png)   
+![Alt text](http://www.nexbrain.com/renew/images/comm/logo.png "Nexbrain")   
+<img src="/path/to/img.jpg" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="RubberDuck"></img>   
+<img src="/path/to/img.jpg" width="40%" height="30%" title="px(픽셀) 크기 설정" alt="RubberDuck"></img>
+***
+## To change line
+* 줄 바꿈을 하기 위해서는 문장 마지막에서 3칸이상을 띄어쓰기해야 한다.___\\ 띄어쓰기
+이렇게
+
+줄 바꿈을 하기 위해서는 문장 마지막에서 3칸이상을 띄어쓰기해야 한다.   
+이렇게
