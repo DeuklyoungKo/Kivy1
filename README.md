@@ -6,15 +6,15 @@
 >## Virtual with Anaconda
 
 * ### Anaconda virtual
-        conda create -n Home python=3
+        conda create -n Home python=3.7
         conda info --envs
-        conda env remove -n Home2
+        conda env remove -n Home
 
 * ### Run virtual
         cd D:\Kivy\1\Home
         .\Scripts\activate
 
-        conda activate Home2
+        conda activate Home
         conda deactivate
 
 ***
@@ -24,12 +24,79 @@
 ***
 > ## Buildozer 
 
-Link : <https://kivy.org/doc/stable/guide/packaging-android.html#buildozer>
-[Buildozer](https://kivy.org/doc/stable/guide/packaging-android.html#buildozer, "Buildozer")
-        
-        git clone https://github.com/kivy/buildozer.git
-        cd buildozer
-        sudo python setup.py install
+Link : [Kivy Buildozer](https://kivy.org/doc/stable/guide/packaging-android.html#buildozer, "Kivy Buildozer")   
+Link : [Buildozer](https://github.com/kivy/buildozer, "Buildozer")
+
+        sudo apt install python-pip
+        pip install buildozer
+
+        buildozer init
+
+        # edit the buildozer.spec, then
+        buildozer android debug deploy run
+
+        buildozer android clean
+
+        sudo apt-get install zlib1g-dev
+        pip install Cython
+
+        sudo apt install default-jre
+        sudo apt install openjdk-8-jre-headless
+        sudo apt install default-jre
+        sudo apt install default-jdk
+        sudo apt-get install unzip
+
+        download Command line tools only at https://developer.android.com/studio
+
+        # To set PATH
+        export PATH=/home/ubuntu/.buildozer/android/platform/android-sdk/tools:/home/ubuntu/.buildozer/android/platform/android-sdk/tools/bin:$PATH
+        source ~/.bashrc
+
+        # To downgrade to openjdk-8-jre
+        https://askubuntu.com/questions/1133216/downgrading-java-11-to-java-8
+
+
+* ### To test 
+        sdkmanager --list
+
+        For those who struggled with installing Android Command Line Tools for Appium on Windows 10/x64 just do as following:
+
+        Download latest Command line tools from android i.e. commandlinetools-win-6200805_latest.zip    
+        Unzip the downloaded file   
+        Create directory for storing commandline tools somewhere on your disk, with following path included: android/cmdline-tools/latest Basically when You unzip this Cmd line tools, just rename tools directory to latest and make sure You put this latest folder in android/cmdline-tools directory somewhere on your disk
+        Create ANDROID_HOME environment variable for directory that stores the cmdline tools directory location like: C:\YourLocationWhereYouStoreTheDirectory\android\cmdline-tools\latest
+        Create new entry in Path environment variable as %ANDROID_HOME%\bin
+
+* ### Error : ModuleNotFoundError: No module named '_ctypes'
+        # in Ubuntu
+        sudo apt install libffi-dev 
+
+        # in Redhat, Fedora
+        sudo apt install libffi-devel
+
+
+* ### Error : Could not find tools.jar. Please check that /usr/lib/jvm/java-8-openjdk-amd64 contains a valid JDK installation.
+        https://blusky10.tistory.com/368
+
+
+* ### CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+        source ~/anaconda3/etc/profile.d/conda.sh
+        conda activate Home
+
+
+# Etc log
+
+        curl –O https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
+
+        sha256sum Anaconda3-2020.02-Linux-x86_64.sh
+
+        sudo chmod -R 775 anaconda3/
+        sudo chown -R ubuntu.ubuntu anaconda3/
+
+
+        vi ~/.bashrc
+        source ~/.bashrc
+
 
 ***
 ***
@@ -104,3 +171,12 @@ Link : <https://kivy.org/doc/stable/guide/packaging-android.html#buildozer>
 
 줄 바꿈을 하기 위해서는 문장 마지막에서 3칸이상을 띄어쓰기해야 한다.   
 이렇게
+
+***
+## To delete downloaded file
+* ### 다운받은 모든 패키지 삭제
+        sudo apt-get clean
+* ### 다운받은 패키지 중에 옛버전만 삭제
+        sudo apt-get autoclean
+* ### 다운받은 패키지 중에 설치에 필요없는 패키지만 삭제
+        sudo apt-get autoremove
