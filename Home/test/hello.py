@@ -9,6 +9,8 @@ class MainApp(App):
 
         return label
 
-if __name__ == '__main__':
-    app = MainApp()
-    app.run()
+# if __name__ == '__main__':
+#     app = MainApp()
+#     app.run()
+
+MainApp().run()

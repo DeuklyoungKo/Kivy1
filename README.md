@@ -35,6 +35,8 @@ Link : [Buildozer](https://github.com/kivy/buildozer, "Buildozer")
         # edit the buildozer.spec, then
         buildozer android debug deploy run
 
+        buildozer android deploy run logcat
+
         buildozer android clean
 
         sudo apt-get install zlib1g-dev
@@ -84,6 +86,11 @@ Link : [Buildozer](https://github.com/kivy/buildozer, "Buildozer")
         conda activate Home
 
 
+* ### Could not find tools.jar. Please check that /usr/lib/jvm/java-8-openjdk-amd64 contains a valid JDK installation. [Source](https://blusky10.tistory.com/368, "Could not find tools.jar") 
+
+        export JAVA_HOME=$(dirname $(dirname $(update-alternatives --list javac)))
+
+
 # Etc log
 
         curl –O https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
@@ -98,6 +105,14 @@ Link : [Buildozer](https://github.com/kivy/buildozer, "Buildozer")
         source ~/.bashrc
 
 
+
+***
+***
+# Linux Tips
+
+        $ find . -name "FILE"
+
+        sudo reboot
 ***
 ***
 # Mark Down Sample
